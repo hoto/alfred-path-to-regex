@@ -1,9 +1,8 @@
-const convertPathToRegex = (input) => {
-  return input
+const convertPathToRegex = (input) =>
+  input
     .trim()
     .split('/')
-    .map((t) => t)
+    .map((t) => (t.includes('{') ? '.*' : t))
     .join('/')
-}
 
 export default convertPathToRegex
