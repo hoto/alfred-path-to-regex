@@ -7,6 +7,16 @@ Useful for searching for endpoints in IDEs.
 
     npm install --global @hoto/alfred-path-to-regex
 
+### Example
+
+Converts any parts of the path to `.*` only if:
+* if part contains any of: `{`, `:`, `0-9` 
+* if part is all caps
+
+![](.images/01.png)
+
+![](.images/02.png)
+
 ### Develop
 
 Create symlink for rapid workflow development:

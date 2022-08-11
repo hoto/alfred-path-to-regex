@@ -5,6 +5,7 @@ const convertPathToRegex = (input) =>
     .map((t) => (t.includes('{') ? '.*' : t))
     .map((t) => (t.includes(':') ? '.*' : t))
     .map((t) => (/\d/.test(t) ? '.*' : t))
+    .map((t) => (t && t.toUpperCase() === t ? '.*' : t))
     .join('/')
 
 export default convertPathToRegex
