@@ -1,0 +1,27 @@
+{
+  "name": "alfred-path-to-regex",
+  "version": "1.0.0",
+  "description": "Convert endpoint path to regex",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoto/alfred-path-to-regex.git"
+  },
+  "author": "Andrzej Rehmann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoto/alfred-path-to-regex/issues"
+  },
+  "homepage": "https://github.com/hoto/alfred-path-to-regex#readme",
+  "dependencies": {
+    "alfy": "1.0.0"
+  }
+}
