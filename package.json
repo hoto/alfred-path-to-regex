@@ -1,5 +1,5 @@
 {
-  "name": "alfred-path-to-regex",
+  "name": "@hoto/alfred-path-to-regex",
   "version": "1.0.0",
   "description": "Convert endpoint path to regex",
   "engines": {
