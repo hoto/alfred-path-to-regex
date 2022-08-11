@@ -18,5 +18,8 @@ test('convert path to regex', (t) => {
   t.equal(convertPathToRegex('{x}'), '.*')
   t.equal(convertPathToRegex('{{x}}}'), '.*')
   t.equal(convertPathToRegex('a/b/{c}/{d}/e/'), 'a/b/.*/.*/e/')
+  t.equal(convertPathToRegex('a/b/:c/:d/e/'), 'a/b/.*/.*/e/')
+  t.equal(convertPathToRegex('a/b/1/d-2/e/3fg'), 'a/b/.*/.*/e/.*')
+  t.equal(convertPathToRegex('/abc/def/123/ghi'), '/abc/def/.*/ghi')
   t.end()
 })
