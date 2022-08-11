@@ -1,15 +1,17 @@
 import alfy from 'alfy'
+import convertPathToRegex from "./converter.js";
 
 const input = alfy.input
 
+const converted = convertPathToRegex(input)
 const output = [
     {
-        title: input,
+        title: converted,
         subtitle: 'Copy to clipboard',
-        arg: input,
+        arg: converted,
         text: {
-            copy: input,
-            largetype: input,
+            copy: converted,
+            largetype: converted,
         },
         variables: {
             action: 'copy',
