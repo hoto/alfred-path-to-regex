@@ -1,21 +1,20 @@
 import alfy from 'alfy'
 
+const input = alfy.input
+
 const output = [
     {
-        title: 'title',
-        subtitle: 'subtitle',
-        arg: 'arg',
+        title: input,
+        subtitle: 'Copy to clipboard',
+        arg: input,
         text: {
-            copy: 'copy',
-            largetype: 'largetype',
+            copy: input,
+            largetype: input,
         },
         variables: {
             action: 'copy',
         },
     }
 ]
-
-
-// alfy.input )
 
 alfy.output(output)
