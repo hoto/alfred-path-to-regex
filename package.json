@@ -26,6 +26,7 @@
     "alfy": "1.0.0"
   },
   "devDependencies": {
+    "prettier": "2.7.1",
     "tap-min": "2.0.0",
     "tape": "5.5.3"
   }

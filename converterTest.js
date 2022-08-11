@@ -1,7 +1,18 @@
 import test from 'tape'
 import convertPathToRegex from "./converter.js";
 
-test('timing test', t => {
-    t.plan(1)
-    t.equal(convertPathToRegex('/path'), '/path')
+test('convert path to regex', t => {
+    t.equal(convertPathToRegex(''), '')
+    t.equal(convertPathToRegex(' '), '')
+    t.equal(convertPathToRegex(' x'), 'x')
+    t.equal(convertPathToRegex('x '), 'x')
+    t.equal(convertPathToRegex(' x '), 'x')
+    t.equal(convertPathToRegex('x'), 'x')
+    t.equal(convertPathToRegex('/x'), '/x')
+    t.equal(convertPathToRegex('/xz'), '/xz')
+    t.equal(convertPathToRegex('/x/'), '/x/')
+    t.equal(convertPathToRegex('/x/z'), '/x/z')
+    t.equal(convertPathToRegex('/x/z/'), '/x/z/')
+    // t.equal(convertPathToRegex('{x}'), '.*')
+    t.end()
 });
