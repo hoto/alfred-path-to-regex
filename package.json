@@ -1,6 +1,6 @@
 {
   "name": "@hoto/alfred-path-to-regex",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert endpoint path to regex",
   "engines": {
     "node": ">=16.0.0"
