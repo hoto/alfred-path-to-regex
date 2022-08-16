@@ -25,5 +25,6 @@ test('convert path to regex', (t) => {
   t.equal(convertPathToRegex('ABC/abc'), '.*/abc')
   t.equal(convertPathToRegex('/orders/01GA59QQ3982T9'), '/orders/.*')
   t.equal(convertPathToRegex('/clients/ABC-123/accounts/ISA'), '/clients/.*/accounts/.*')
+  t.equal(convertPathToRegex('%s/a/%s/b/%s'), '.*/a/.*/b/.*')
   t.end()
 })

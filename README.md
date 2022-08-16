@@ -10,7 +10,7 @@ Useful for searching for endpoints in IDEs.
 ### Example
 
 Converts any parts of the path to `.*` only if:
-* if part contains any of: `{`, `:`, `0-9` 
+* if part contains any of: `{`, `:`, `%s`, `0-9` 
 * if part is all caps
 
 ![](.images/01.png)

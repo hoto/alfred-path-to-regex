@@ -4,6 +4,7 @@ const convertPathToRegex = (input) =>
     .split('/')
     .map((t) => (t.includes('{') ? '.*' : t))
     .map((t) => (t.includes(':') ? '.*' : t))
+    .map((t) => (t.includes('%s') ? '.*' : t))
     .map((t) => (/\d/.test(t) ? '.*' : t))
     .map((t) => (t && t.toUpperCase() === t ? '.*' : t))
     .join('/')
