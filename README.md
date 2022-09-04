@@ -5,7 +5,7 @@ Useful for searching for endpoints in IDEs.
 
 ### Install
 
-    npm install --global @hoto/alfred-path-to-regex
+    npm install --location=global @hoto/alfred-path-to-regex
 
 ### Example
 
