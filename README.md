@@ -21,6 +21,12 @@ Converts any parts of the path to `.*` only if:
 
 Create symlink for rapid workflow development:
 
-    npm install -g
+    npm install --location=global
+
+Publish:
+
+    git commit -am "Commit message"
+    npm version patch
+    npm publish --access public
 
 <a href="https://www.flaticon.com/free-icons/path" title="path icons">Path icons created by Graphix Dxinerz - Flaticon</a>
